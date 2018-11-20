@@ -1,0 +1,114 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Blaise Roberts"
+    },
+    {
+      "id": 2,
+      "name": "Robert Blaise"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "500 Circle Way"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "10101 Binary Court"
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Jack",
+      "breed": "Black Lab"
+    },
+    {
+      "id": 2,
+      "name": "Angus",
+      "breed": "Chocolate Lab"
+    },
+    {
+      "id": 3,
+      "name": "Henley",
+      "breed": "Toy Poodle"
+    },
+    {
+      "id": 4,
+      "name": "Checkers",
+      "breed": "Dalmation"
+    },
+    {
+      "id": 5,
+      "name": "Olive",
+      "breed": "Pembroke Welsh Corgi"
+    },
+    {
+      "id": 6,
+      "name": "Marcy",
+      "breed": "Cardigan Welsh Corgi"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Ousama"
+    },
+    {
+      "id": 2,
+      "name": "Zac"
+    },
+    {
+      "id": 3,
+      "name": "Elyse"
+    },
+    {
+      "id": 4,
+      "name": "Brendan"
+    },
+    {
+      "id": 5,
+      "name": "Greg"
+    },
+    {
+      "id": 6,
+      "name": "Jenna"
+    }
+  ],
+  "animalsOwned": [
+    {
+      "id": 1,
+      "animalId": 1,
+      "ownerId": 1
+    },
+    {
+      "id": 2,
+      "animalId": 1,
+      "ownerId": 2
+    },
+    {
+      "id": 3,
+      "animalId": 2,
+      "ownerId": 3
+    },
+    {
+      "id": 5,
+      "animalId": 4,
+      "ownerId": 5
+    },
+    {
+      "id": 6,
+      "animalId": 5,
+      "ownerId": 1
+    },
+    {
+      "id": 7,
+      "animalId": 6,
+      "ownerId": 1
+    }
+  ]
+}
