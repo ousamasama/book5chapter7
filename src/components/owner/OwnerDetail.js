@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import "./owner.css"
 
 // import "./location.css"
 

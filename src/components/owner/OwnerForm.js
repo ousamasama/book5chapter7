@@ -1,12 +1,10 @@
 import React, { Component } from "react"
-import "./animal.css"
+import "./owner.css"
 
-export default class AnimalForm extends Component {
+export default class OwnerForm extends Component {
     // Set initial state
     state = {
-        animalName: "",
-        breed: "",
-        employee: ""
+        owner: ""
     }
 
     // Update state whenever an input field is edited
@@ -17,45 +15,44 @@ export default class AnimalForm extends Component {
     }
 
     /*
-        Local method for validation, creating animal object, and
+        Local method for validation, creating owner object, and
         invoking the function reference passed from parent component
      */
-    constructNewAnimal = evt => {
+    constructNewOwner = evt => {
         evt.preventDefault()
-        if (this.state.employee === "") {
-            window.alert("Please select a caretaker")
-        } else {
-            const animal = {
-                name: this.state.animalName,
-                breed: this.state.breed,
-                employeeId: this.props.employees.find(e => e.name === this.state.employee).id
+        // if (this.state.employee === "") {
+        //     window.alert("Please select a caretaker")
+        // } else {
+            const owner = {
+                name: this.state.owner
             }
 
-            // Create the animal and redirect user to animal list
-            this.props.addAnimal(animal).then(() => this.props.history.push("/animals"))
-        }
+            // Create the owner and redirect user to owner list
+            this.props.addOwner(owner).then(() => this.props.history.push("/owners"))
+        // }
     }
 
     render() {
         return (
             <React.Fragment>
-                <form className="animalForm">
+                <form className="ownerForm">
                     <div className="form-group">
-                        <label htmlFor="animalName">Animal name</label>
+                        <label htmlFor="owner">Owner name</label>
                         <input type="text" required
                                className="form-control"
                                onChange={this.handleFieldChange}
-                               id="animalName"
-                               placeholder="Animal name" />
+                               id="owner"
+                               placeholder="Owner name" />
                     </div>
-                    <div className="form-group">
+                    {/* make location */}
+                    {/* <div className="form-group">
                         <label htmlFor="breed">Breed</label>
                         <input type="text" required
                                className="form-control"
                                onChange={this.handleFieldChange}
                                id="breed" placeholder="Breed" />
-                    </div>
-                    <div className="form-group">
+                    </div> */}
+                    {/* <div className="form-group">
                         <label htmlFor="employee">Assign to caretaker</label>
                         <select defaultValue="" name="employee" id="employee"
                                 onChange={this.handleFieldChange}>
@@ -64,8 +61,8 @@ export default class AnimalForm extends Component {
                             this.props.employees.map(e => <option key={e.id} id={e.id}>{e.name}</option>)
                         }
                         </select>
-                    </div>
-                    <button type="submit" onClick={this.constructNewAnimal} className="btn btn-primary">Submit</button>
+                    </div> */}
+                    <button type="submit" onClick={this.constructNewOwner} className="btn btn-primary">Submit</button>
                 </form>
             </React.Fragment>
         )

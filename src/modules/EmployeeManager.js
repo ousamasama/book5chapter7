@@ -10,6 +10,9 @@ class EmployeeManager extends APIManager {
   removeAndList(id) {
     return this.delete(id).then(() => this.all())
   }
+  addEmployee(newEmployee) {
+    return this.post(newEmployee).then(() => this.all())
+  }
 }
 
 export default new EmployeeManager("employees")

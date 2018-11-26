@@ -7,6 +7,10 @@
     {
       "id": 2,
       "name": "Robert Blaise"
+    },
+    {
+      "name": "Pizza Man",
+      "id": 3
     }
   ],
   "locations": [
@@ -51,6 +55,12 @@
       "id": 6,
       "name": "Marcy",
       "breed": "Cardigan Welsh Corgi"
+    },
+    {
+      "name": "Ranch",
+      "breed": "Cheese",
+      "employeeId": 3,
+      "id": 7
     }
   ],
   "owners": [
@@ -77,6 +87,10 @@
     {
       "id": 6,
       "name": "Jenna"
+    },
+    {
+      "name": "Pizza Man",
+      "id": 7
     }
   ],
   "animalsOwned": [
